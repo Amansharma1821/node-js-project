@@ -28,7 +28,7 @@ app.use(express.static('public'));
 
 // Define your routes
 app.get('/', (req, res) => {
-  response.json({ status: 200, message: 'OK' });
+  res.json({ country: 'Hello welcome' });
 });
 
 app.get('/broadcast/1', (req, res) => {
