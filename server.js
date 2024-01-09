@@ -28,7 +28,7 @@ app.use(express.static('public'));
 
 // Define your routes
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  response.json({ status: 200, message: 'OK' });
 });
 
 app.get('/broadcast/1', (req, res) => {
